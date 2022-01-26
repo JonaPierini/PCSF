@@ -35,7 +35,7 @@ export const CartScreen = () => {
                         <hr></hr>
                         <h3>TOTAL: ${calcularTotal()}</h3>
                         <button onClick={vaciarCarrito}>
-                            Vaciar Carrito
+                            VACIAR TODO EL CARRITO
                         </button>
                 </>
             }
