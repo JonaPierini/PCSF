@@ -12,7 +12,7 @@ export const CartScreen = () => {
             {
                 carrito.length === 0
                 ? <>
-                    <h1>SU CARRITO ESTA VACIO</h1>
+                    <h1>SU CARRITO ESTA VACIO - SIN FIREBASE</h1>
                     <Link to= "/">Ir al Inicio</Link>
                   </>
                 : <>
