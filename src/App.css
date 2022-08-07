@@ -43,7 +43,6 @@ body{
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 100px;
   color: white;
   /* lo de arriba para que quede abajo el footer */
   font-size: 36px;

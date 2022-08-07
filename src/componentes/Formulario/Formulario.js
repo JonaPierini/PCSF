@@ -13,8 +13,8 @@ export const Formulario = () => {
         console.log(e.target.value)
         console.log(e.target.name)
         setValues({
-            ...values,
-            [e.target.name] : e.target.value,
+            ...values, //copio todas las propiedades que ya tenia el objeto => osea una string
+            [e.target.name] : e.target.value, // aca lo sobre escribe => asi es la sintaxis
         })
   }
 

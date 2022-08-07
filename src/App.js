@@ -17,6 +17,7 @@ function App() {
         console.log(carrito)
     // esta funcion la llamo en ItemDetail con handleAgregar
     const addToCart = (item) =>{
+        //carrito.push(item) => seria hacer eso
         setCarrito([...carrito, item])
     }
     // esta funcion la llamo en CartScreen
@@ -26,7 +27,7 @@ function App() {
     }
     // Esta funcion la llamo en CartWidget para que se me vea en el natbar
     const calcularCantidad = () =>{
-        // recorre un array y me retorna la suma de esos elemento. Recibe dos parametros un acumulador y el prod que quiero que sume
+        // recorre un array y me retorna la suma de esos elemento. Recibe dos parametros un acumulador (acc) y el prod que quiero que sume
         // el 0 es el valor inicial del acumulador. Como reccore carrito
         return carrito.reduce((acc, prod) => acc + prod.cantidad, 0)
     }
@@ -45,9 +46,12 @@ function App() {
         return carrito.some(prod=> prod.id === itemId)
     }
 
+   
+ 
   return (
     <div className="App">
-        <CartContext.Provider value={
+        <CartContext.Provider value={ 
+            //Aca le paso valores, funciones, estados y van a ser accedidos de cualquier lado. Estan pasados por objetos
             {
             addToCart,
             removerItem,

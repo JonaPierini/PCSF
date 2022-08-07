@@ -10,7 +10,7 @@ import { ItemCount } from '../ItemCount/ItemCount';
     // porque son los item individuales de cada producto
     const [cantidad, setCantidad] = useState(1)
 
-    // Llamo mi Context
+    // Llamo mi Context en forma desestructurada
     const {addToCart, isInCart} = useContext(CartContext)
 
     const handleAgregar = () =>{
