@@ -7,6 +7,7 @@ import { Footer } from "./componentes/Footer/Footer";
 import { ItemDetailConteiner } from "./componentes/ItemDetailConteiner/ItemDetailConteiner.js";
 import {CartProvider } from "./context/CartContext";
 import { CartScreen } from "./componentes/CartScreen/CartScreen";
+import {Formulario} from './componentes/Formulario/Formulario'
 
 function App() {
   return (
@@ -38,7 +39,9 @@ function App() {
 
             <Route exact path="/carrito" element={<CartScreen />}></Route>
 
+            <Route exact path="/formulario" element={<Formulario></Formulario>}></Route>
             <Route path="*" element={<Navigate to="/" />}></Route>
+            
           </Routes>
 
           <Footer />
